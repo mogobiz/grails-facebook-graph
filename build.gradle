@@ -1,0 +1,16 @@
+plugins {
+    id "io.spring.dependency-management" version "0.5.4.RELEASE"
+    id "com.jfrog.bintray" version "1.2"
+}
+
+group   "org.grails.plugins"
+version "0.15"
+
+dependencyManagement {
+    imports {
+        mavenBom "org.grails:grails-bom:$grailsVersion"
+    }
+    applyMavenExclusions false
+}
+
+dependencies {}
